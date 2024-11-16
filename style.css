@@ -1,0 +1,577 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(108, 122, 243);
+    margin: 0;
+}
+.heading {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 3em;
+    font-weight: bold;
+    color: #800080;
+    text-align: center; 
+}
+.wrapper {
+    max-width: max;
+    margin: 15px auto;
+}
+
+.container-calendar {
+    background: #c8b5ff;
+    padding: 15px;
+    max-width: auto;
+    margin: 0 auto;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 65px;
+}
+
+#event-section {
+    padding: 10px;
+    background: #c8b5ff;
+    margin: 20px 0;
+    border: 1px solid #c8b5ff;
+}
+
+.container-calendar #left h1 {
+    color: rgb(8, 40, 60);
+    text-align: center;
+    background-color: #c8b5ff;
+    margin: 0;
+    padding: 20px 0;
+    
+}
+
+#event-section h3 {
+    color: rgb(11, 10, 10);
+    font-size: 18px;
+    margin: 0;
+}
+#event-section input[type="date"],
+#event-section input[type="time"],
+#event-section input[type="text"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+    border-radius: 12px;
+}
+
+#event-section button {
+    background: #8147f4;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size:1em;
+    
+}
+
+#reminder-section {
+    padding: 10px;
+    background: #201057f0;
+    margin: 20px 10px;
+    border: 1px solid #c8b5ff;
+    border-radius: 20px;
+}
+
+#reminder-section h3 {
+    color: rgb(248, 255, 119);
+    font-size: 18px;
+    margin: 0;
+}
+
+#reminderList {
+    list-style: none;
+    padding: 0;
+}
+
+#reminderList li {
+    margin: 5px 0;
+    font-size: 16px;
+    color:#94bdf7;
+}
+
+.delete-event {
+    background: rgb(237, 19, 19);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    background:  #a955fd;
+    color: #060303;
+    border: 1px solid ;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+  .table-calendar td,
+  .table-calendar th {
+    padding: 1em;
+    border: 2px solid #040405;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+/* .table-calendar td,
+.table-calendar th {
+    padding: auto;
+    border: 2px solid #040405;
+    text-align: center;
+    vertical-align: top;
+    
+}
+.date-picker.selected {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker:nth-child(1) {
+    color: red; 
+}
+
+.date-picker:nth-child(6) {
+    color: green;
+}
+
+.date-picker:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+#enableNotifications {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8147f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#enableNotifications:hover {
+    background-color: #6a39cc;
+    transform: scale(1.05);
+}
+
+.heading {
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+    font-size: 3em;
+    font-weight: bold;
+    color: #800080;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    position: relative; 
+    transition: text-shadow 0.3s ease;
+}
+
+.heading:hover {
+    text-shadow: 2px 2px 5px #aaa;
+}
+
+footer {
+    background-color: #c8b5ff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #8147f4;
+    margin-top: 20px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-logo {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.contact-logo:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8147f4;
+}
+
+#enableNotifications {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8147f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#enableNotifications:hover {
+    background-color: #6a39cc;
+    transform: scale(1.05);
+}
+
+ */
+/* --------------------------------------------------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #a9a9ff;
+}
+
+.wrapper {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.container-calendar {
+  flex-grow: 1;
+  background: #f4e3ff;
+  padding: 15px;
+  max-width: auto;
+  margin: 0 auto;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: linear-gradient(135deg, #c8b5ff 25%, #e6ccff 50%, #f4e3ff 75%);
+}
+
+#event-section, #reminder-section {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background: #dfd6d665;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#event-section h3 {
+  color: rgb(11, 10, 10);
+  font-size: 18px;
+  margin: 0;
+}
+
+#event-section input[type="date"],
+#event-section input[type="time"],
+#event-section input[type="text"] {
+  margin: 10px 0;
+  padding: 8px;
+  width: 80%;
+  border-radius: 12px;
+}
+
+#event-section button {
+  background: #8147f4;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+#reminder-section {
+  padding: 10px;
+  background: #201057f0;
+  margin: 20px 10px;
+  border: 1px solid #c8b5ff;
+  border-radius: 20px;
+}
+
+#reminder-section h3 {
+  color: rgb(248, 255, 119);
+  font-size: 18px;
+  margin: 0;
+}
+
+#reminderList {
+  list-style: none;
+  padding: 0;
+}
+
+#reminderList li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #94bdf7;
+  position: relative;
+  padding-right: 50px;
+}
+
+.delete-event {
+  display: none;
+  background: rgb(237, 19, 19);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  position: absolute;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#reminderList li:hover .delete-event {
+  display: inline-block;
+}
+
+.button-container-calendar button {
+  cursor: pointer;
+  background: #a955fd;
+  color: #fdfdfd;
+  border: 0px solid;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+footer {
+  background-color: #8d69fb;
+  padding: 20px;
+  text-align: center;
+  border-top: 10px solid #8d69fb98;
+  margin-top: 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-logo {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.contact-logo:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.heading {
+  font-family: 'Copperplate', 'Papyrus', fantasy;
+  font-size: 3em;
+  font-weight: bold;
+  color: #800080;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  position: relative;
+  transition: text-shadow 0.3s ease;
+}
+
+.heading:hover {
+  text-shadow: 2px 2px 5px #aaa;
+}
+
+#enableNotifications {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #8147f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#enableNotifications:hover {
+  background-color: #6a39cc;
+  transform: scale(1.05);
+}
+
+.table-calendar {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table-calendar td,
+.table-calendar th {
+  padding: 1em;
+  border: 2px solid #040405;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 10px;
+}
+
+.date-picker.selected {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  outline: 1px dashed #00BCD4;
+}
+
+.date-picker:nth-child(1) {
+  color: red;
+}
+
+.date-picker:nth-child(6) {
+  color: green;
+}
+
+.date-picker:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+#monthAndYear {
+  text-align: center;
+  margin-top: 0;
+}
+
+.button-container-calendar {
+  position: relative;
+  margin-bottom: 1em;
+  overflow: hidden;
+  clear: both;
+  border-radius: 10px;
+}
+
+#previous {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+.footer-container-calendar {
+  margin-top: 1em;
+  border-top: 1px solid #dadada;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.footer-container-calendar select {
+  cursor: pointer;
+  background: #ffffff;
+  color: #585858;
+  border: 1px solid #bfc5c5;
+  border-radius: 10px;
+  padding: 5px 1em;
+}
+
+@media (max-width: 768px) {
+  .container-calendar {
+      flex-direction: column;
+  }
+
+  #reminder-section {
+      width: 100%;
+  }
+
+  .button-container-calendar button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .footer-container-calendar select {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 2em;
+  }
+
+  #event-section input[type="date"],
+  #event-section input[type="time"],
+  #event-section input[type="text"] {
+      width: 100%;
+  }
+
+  .table-calendar td,
+  .table-calendar th {
+      padding: 0.5em;
+  }
+
+  .contact-logo {
+      width: 25px;
+  }
+}
+

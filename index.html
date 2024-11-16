@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TaskManager</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button id="enableNotifications" onclick="enableNotifications()">Enable Notifications for Tasks</button>
+        <h1 class="heading">TaskManager</h1>
+        <div class="container-calendar">
+            <div id="left">
+                <div id="event-section">
+                    <h3>Add Task/Event</h3>
+                    <input type="date" id="eventDate">
+                    <input type="time" id="eventTime">
+                    <input type="text" id="eventTitle" placeholder="Event Title">
+                    <input type="text" id="eventDescription" placeholder="Event Description">
+                    <button id="addEvent" onclick="addEvent()">Add</button>
+                </div>
+                <div id="reminder-section">
+                    <h3>Tasks/Events of this month:</h3>
+                    <ul id="reminderList"></ul>
+                </div>
+            </div>
+            <div id="right">
+                <div class="button-container-calendar">
+                    <button id="previous" onclick="previous()">‹</button>
+                    <button id="next" onclick="next()">›</button>
+                    <h3 id="monthAndYear"></h3>
+                </div>
+                <table class="table-calendar" id="calendar">
+                    <thead id="thead-month"></thead>
+                    <tbody id="calendar-body"></tbody>
+                </table>
+                <div class="footer-container-calendar">
+                    <label for="month">Jump To: </label>
+                    <select id="month" onchange="jump()"></select>
+                    <select id="year" onchange="jump()"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-section">
+            <a href="https://github.com/Ayush1Deshmukh" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=efFfwotdkiU5&format=png&color=000000" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/ayush-deshmukh1/" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=kBCrQMzpQDLQ&format=png&color=000000" alt="LinkedIn" class="contact-logo">
+            </a>
+            <p>Developed by Ayush Deshmukh</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
