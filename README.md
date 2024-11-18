@@ -5,7 +5,7 @@
     Elevate your productivity with TaskManager, the ultimate tool for organizing your life.
   </p>
    <p align="center">
-    To use the TaskManger , visit this link :[https://ayush1deshmukh.github.io/TaskManager-weekly-Planner-/](https://ayush1deshmukh.github.io/TaskManager-weekly-Planner/)
+    To use the TaskManger , visit this link :(https://ayush1deshmukh.github.io/TaskManager-weekly-Planner/)
   </p>
 
   <h2 align="center">Key Features</h2>
